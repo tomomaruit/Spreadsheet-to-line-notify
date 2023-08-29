@@ -3,6 +3,7 @@ Google spreadsheets の特定のセルに書き込んだ内容をLINE Notify に
 
 # 使用するサービス
   - [Google Spreadsheets][GS_link]
+  - [Google Apps Script][GAS_link]
   - [LINE Notify][Notify_link]
 
 # 使用方法(最終更新：2023/08/20)
@@ -23,7 +24,7 @@ Google spreadsheets の特定のセルに書き込んだ内容をLINE Notify に
 | LINE_TOKEN | '取得したLINE Notifyのパーソナルアクセストークン' |
 | SHEET_ID | '使用するスプレッドシートのID' |
 
-なお、LINE Notifyのトークン取得方法については以下の記事を参照してください。
+なお、LINE Notifyのトークン取得方法と、スプレッドシートのIDについては以下の記事を参照してください。
 
 参考：[LINE Notifyのトークンを取得方法・備忘録][Qiita_LINENotify]、[【GoogleAppsScript】スプレッドシートIDの見方と取得][Qiita_spreadsheets]
 
@@ -42,6 +43,7 @@ via LINE Autosender
 
 
 [GS_link]: https://www.google.com/intl/ja_jp/sheets/about/
+[GAS_link]:https://workspace.google.co.jp/intl/ja/products/apps-script/
 [Notify_link]: https://notify-bot.line.me/ja/
 [script_property_en]: https://developers.google.com/apps-script/reference/properties?hl=en
 [script_property_jp]: https://developers.google.com/apps-script/reference/properties?hl=ja
