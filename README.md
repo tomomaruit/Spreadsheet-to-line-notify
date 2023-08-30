@@ -1,4 +1,4 @@
-# Spreadsheet-to-line-notify
+# **Spreadsheet-to-line-notify**
 Google spreadsheets の特定のセルに書き込んだ内容をLINE Notify に送信するプログラム。
 
 # 使用するサービス
@@ -12,7 +12,7 @@ Google spreadsheets の特定のセルに書き込んだ内容をLINE Notify に
   - 上部のメニューから「拡張機能」を開き、「Google Apps Script」を選択します。
   - 空のGASのエディタが開くので、main.gsの内容を Copy & Paste します。
 
-- **スクリプト プロパティの設定** - 
+- **スクリプト プロパティの設定**
 [スクリプト プロパティとは(英語)][script_property_en],
 [スクリプト プロパティとは(日本語)][script_property_jp]
   - GASの左側のメニューから「プロジェクトの設定」 へ進みます。
@@ -28,12 +28,22 @@ Google spreadsheets の特定のセルに書き込んだ内容をLINE Notify に
 
 参考：[LINE Notifyのトークンを取得方法・備忘録][Qiita_LINENotify]、[【GoogleAppsScript】スプレッドシートIDの見方と取得][Qiita_spreadsheets]
 
+- **送信する内容の入力**
+  - 送信したい内容を***B1***セルに、表示したい送信者名を***B2***セルに入力します。
+  - スプレッドシートが保存されたことを確認します。
+ 
+- **実行** 
+  - 画面上部のメニューバーから「Control GAS」を選択し、「RUN Script」を選択します。
+  - 「RUN Script」が表示されない場合は、スプレッドシートが保存されていることを確認して再度リロードしてください。数秒後に表示されるはずです。
+  - この選択によりGASのコードが実行され、スクリプトが実行されます。
+  
 # **注意事項**
 - 連携するスプレッドシートは、都合上***B1***セルに内容を、***B2***セルに送信者名を入れることを想定しています。
 - なおシート名はデフォルトのまま'***シート1***'としています。
 - 送信者名を記述するセルを空欄にした場合、以下のように***fromの欄が空欄のメッセージ***がLINE Notifyから送信されます。
 ```
-# B1に'Hello World!'と入力しB2が空欄の場合
+# B1に'Hello World!'と入力しB2(送信者名)が空欄の場合
+# 送信メッセージ
 ['LINE Notifyで登録したトークン名']
 Hello World!
 from 
