@@ -6,7 +6,7 @@ Google spreadsheets の特定のセルに書き込んだ内容をLINE Notify に
   - [Google Apps Script][GAS_link]
   - [LINE Notify][Notify_link]
 
-# 使用方法(最終更新：2023/08/20)
+# 使用方法(最終更新：2023/08/30)
 - **GASエディタ側の設定**
   - 空の Google spreadsheets を用意します。
   - 上部のメニューから「拡張機能」を開き、「Google Apps Script」を選択します。
